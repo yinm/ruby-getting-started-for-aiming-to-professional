@@ -1,8 +1,8 @@
-def some_method
-  <<~TEXT
-    これはヒアドキュメントです。
-    <<~を使うと、内部文字列のインデント部分が無視されます。
-  TEXT
-end
+name = 'Alice'
 
-puts some_method
+a = <<TEXT
+ようこそ、#{name}さん！
+以下のメッセージをご覧ください。
+TEXT
+
+puts a
