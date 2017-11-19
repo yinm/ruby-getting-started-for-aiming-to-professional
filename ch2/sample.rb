@@ -1,5 +1,10 @@
-point = 7
-day = 1
+country = 'italy'
 
-point *= 5 if day == 1
-puts point
+greeting = 
+if country == 'japan' then 'こんにちは'
+elsif country == 'us' then 'Hello'
+elsif country == 'italy' then 'ciao'
+else '???'
+end
+
+puts greeting
