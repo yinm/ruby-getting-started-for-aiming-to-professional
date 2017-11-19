@@ -1,9 +1,7 @@
-status = 'error'
-
-if status != 'ok'
-  puts '何か異常があります'
-end
+status = 'ok'
 
 unless status == 'ok'
-  puts '何か異常があります'
+  p '何か異常があります'
+else
+  p '正常です'
 end
