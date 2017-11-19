@@ -1,7 +1,11 @@
-n = 11
+country = 'italy'
 
-if n > 10
-  puts '10より大きい'
+if country == 'japan'
+  puts 'こんにちは'
+elsif country == 'us'
+  puts 'Hello'
+elsif country == 'italy'
+  puts 'ciao'
 else
-  puts '10以下'
+  puts '????'
 end
