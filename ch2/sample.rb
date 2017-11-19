@@ -1,12 +1,5 @@
-def greeting(country)
-  return 'countryを入力してください' if country.nil?
-  
-  if country == 'japan'
-    'こんにちは'
-  else
-    'hello'
-  end
+def greeting
+  'こんにちは'
 end
 
-puts greeting(nil)
-puts greeting('japan')
+puts greeting
