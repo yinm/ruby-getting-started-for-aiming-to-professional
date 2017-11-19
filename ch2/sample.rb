@@ -1,12 +1,9 @@
-def greeting(country)
-  country or return 'countryを入力してください'
-  
-  if country == 'japan'
-    'こんにちは'
-  else
-    'hello'
-  end
+status = 'error'
+
+if status != 'ok'
+  puts '何か異常があります'
 end
 
-p greeting(nil)
-p greeting('japan')
+unless status == 'ok'
+  puts '何か異常があります'
+end
