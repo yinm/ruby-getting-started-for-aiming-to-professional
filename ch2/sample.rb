@@ -1,5 +1,1 @@
-def greeting
-  'こんにちは'
-end
-
-puts greeting
+p 'abc'.class
