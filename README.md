@@ -32,5 +32,17 @@ p a.rationalize * b.rationalize
 * `'フォーマット文字列 % 表示したいオブジェクト'` で指定できる (`sprintf`と同じ)
 * e.g.) `p '%0.3f' % 1.2 #=> "1.200"`
 
+### `&&`, `||` の返り値
+* 真偽が決定した時点で、最後に評価した値が返ってくる
+
+```ruby
+p 1 && 2 && 3 #=> 3
+p 1 && nil && 3 #=> nil
+p 1 && false && 3 #=> false
+
+p nil || false #=> false
+p false || nil #=> nil
+p nil || false || 2 || 3 #=> 2
+```
 
 
