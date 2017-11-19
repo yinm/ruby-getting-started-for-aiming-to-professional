@@ -1,5 +1,15 @@
-def add(a, b)
-  a + b
+def hello_world
+  'Hello, world!'
 end
 
-p add(1, 2)
+def _hello_world
+  'Hello, world!'
+end
+
+def hello_world_2
+  'Hello, world!!'
+end
+
+puts hello_world
+puts _hello_world
+puts hello_world_2
