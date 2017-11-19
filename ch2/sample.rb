@@ -1,6 +1,6 @@
 name = 'Alice'
 
-a = <<TEXT
+a = <<'TEXT'
 ようこそ、#{name}さん！
 以下のメッセージをご覧ください。
 TEXT
