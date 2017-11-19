@@ -1,7 +1,8 @@
-a = <<HTML
-<div>
-  <img src="sample.jpg">
-</div>
-HTML
+def some_method
+  <<-TEXT
+これはヒアドキュメントです。
+<<-を使うと、最後の識別子をインデントさせることができます。
+  TEXT
+end
 
-puts a
+puts some_method
