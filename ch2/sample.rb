@@ -1,3 +1,2 @@
-n = 1
-p n.to_f
-p n.to_f / 2
+p 1 + '10'.to_i
+p 1 + '10.5'.to_f
