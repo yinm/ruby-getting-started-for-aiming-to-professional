@@ -1,14 +1,8 @@
-country = 'italy'
+point = 7
+day = 1
 
-greeting =
-  if country == 'japan'
-    'こんにちは'
-  elsif country == 'us'
-    'Hello'
-  elsif country == 'italy'
-    'ciao'
-  else
-    '????'
-  end
+if day == 1
+  point *= 5
+end
 
-puts greeting
+puts point
