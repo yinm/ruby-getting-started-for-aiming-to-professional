@@ -1,2 +1,4 @@
-number = 3
-p 'Number is ' + number.to_s
+p 0.1 * 3.0
+
+p 0.1 * 3.0 == 0.3
+p 0.1 * 3.0 <= 0.3
