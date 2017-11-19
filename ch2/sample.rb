@@ -1,10 +1,5 @@
-country = 'italy'
-
-greeting = 
-if country == 'japan' then 'こんにちは'
-elsif country == 'us' then 'Hello'
-elsif country == 'italy' then 'ciao'
-else '???'
+def add(a, b)
+  a + b
 end
 
-puts greeting
+p add(1, 2)
