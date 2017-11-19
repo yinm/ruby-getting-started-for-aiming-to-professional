@@ -1,1 +1,1 @@
-# ruby-getting-started-for-aiming-to-professional
+[プロを目指す人のためのRuby入門](https://ruby-book.jnito.com/)をやってます。
