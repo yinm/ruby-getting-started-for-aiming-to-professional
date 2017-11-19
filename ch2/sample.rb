@@ -1,7 +1,5 @@
-p 1 && 2 && 3
-p 1 && nil && 3
-p 1 && false && 3
-
-p nil || false
-p false || nil
-p nil || false || 2 || 3
+t1 = true
+f1 = false
+p (t1 and f1)
+p (t1 or f1)
+p (not t1)
