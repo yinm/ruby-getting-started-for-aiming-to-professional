@@ -1,5 +1,9 @@
-a = 0.1
-b = 3.0
-p a.rationalize * b.rationalize
+data = nil
+data = false
+data = 'fuga'
 
-p (0.1r * 3.0r).to_f
+if data
+  puts 'データがあります'
+else
+  puts 'データがありません'
+end
