@@ -1,5 +1,7 @@
-t1 = true
-f1 = false
+n = 11
 
-p t1 && f1
-p !(t1 && f1)
+if n > 10
+  puts '10より大きい'
+else
+  puts '10以下'
+end
