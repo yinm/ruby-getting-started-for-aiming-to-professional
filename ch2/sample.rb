@@ -1,2 +1,2 @@
-p 1 + '10'.to_i
-p 1 + '10.5'.to_f
+number = 3
+p 'Number is ' + number.to_s
