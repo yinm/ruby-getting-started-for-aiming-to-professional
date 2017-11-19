@@ -15,3 +15,7 @@ b = 3.0
 p a.rationalize * b.rationalize
 ```
 
+### Rubyの真偽値
+* `false`, `nil`であれば、偽
+* それ以外はすべて、真
+
