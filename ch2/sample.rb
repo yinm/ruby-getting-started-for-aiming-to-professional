@@ -1,3 +1,4 @@
-puts 'He said, "Don\'t speak."'
-
-puts "He said, \"Don't speak.\""
+p 'ruby' == 'ruby'
+p 'ruby' == 'Ruby'
+p 'ruby' == 'perl'
+p 'ruby' == 'ruby'
