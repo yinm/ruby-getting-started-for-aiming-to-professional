@@ -1,3 +1,3 @@
-p 'a'.class
-p 'abc'.class
-p ''.class
+p 0b11111111
+p 0377
+p 0xff
