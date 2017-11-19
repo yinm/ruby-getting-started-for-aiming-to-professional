@@ -1,9 +1,6 @@
-data = nil
-data = false
-data = 'fuga'
+t1 = true
+t2 = true
+f1 = false
 
-if data
-  puts 'データがあります'
-else
-  puts 'データがありません'
-end
+p t1 && t2
+p t1 && f1
