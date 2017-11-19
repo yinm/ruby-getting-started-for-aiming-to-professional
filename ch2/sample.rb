@@ -1,5 +1,4 @@
-p sprintf('%0.3f', 1.2)
-p '%0.3f' % 1.2
-
-p sprintf('%0.3f + %0.3f', 1.2, 0.48)
-p '%0.3f + %0.3f' % [1.2, 0.48]
+p 123.to_s
+p [10, 20, 30].join
+p 'Hi!' * 10
+p String.new('hello')
