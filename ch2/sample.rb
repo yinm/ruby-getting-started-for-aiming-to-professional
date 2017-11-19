@@ -1,4 +1,3 @@
-puts "こんにちは\\nさようなら"
+puts 'He said, "Don\'t speak."'
 
-name = 'Alice'
-puts "Hello, \#{name}!"
+puts "He said, \"Don't speak.\""
