@@ -1,15 +1,7 @@
-r = 2 / 3r
-p r
-p r.class
+p 1 && 2 && 3
+p 1 && nil && 3
+p 1 && false && 3
 
-r = '2/3'.to_r
-p r
-p r.class
-
-c = 0.3 - 0.5i
-p c
-p c.class
-
-c = '0.3-0.5i'.to_c
-p c
-p c.class
+p nil || false
+p false || nil
+p nil || false || 2 || 3
