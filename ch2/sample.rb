@@ -1,6 +1,7 @@
-a = <<TEXT
-これはヒアドキュメントです。
-複数行に渡る長い文字列を作成するのに便利です。
-TEXT
+a = <<HTML
+<div>
+  <img src="sample.jpg">
+</div>
+HTML
 
 puts a
