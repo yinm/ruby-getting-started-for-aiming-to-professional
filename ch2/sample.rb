@@ -1,12 +1,22 @@
-status = 'error'
+country = 'italy'
 
-message =
-  unless status == 'ok'
-    '何か異常があります'
+if country == 'japan'
+  p 'こんにちは'
+elsif country == 'us'
+  p 'Hello'
+elsif country == 'italy'
+  p 'ciao'
+else
+  p '????'
+end
+
+case country
+  when 'japan'
+    p 'こんにちは'
+  when 'us'
+    p 'Hello'
+  when 'italy'
+    p 'ciao'
   else
-    '正常です'
-  end
-
-p message
-
-p '何か異常があります' unless status == 'ok'
+    p '????'
+end
