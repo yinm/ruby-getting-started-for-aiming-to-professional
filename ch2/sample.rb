@@ -1,12 +1,5 @@
-a = 'Ruby'
-a.prepend(<<TEXT)
-Jsva
-PHP
-TEXT
-puts a
+p sprintf('%0.3f', 1.2)
+p '%0.3f' % 1.2
 
-b = <<TEXT.upcase
-Hello,
-Good-bye.
-TEXT
-puts b
+p sprintf('%0.3f + %0.3f', 1.2, 0.48)
+p '%0.3f + %0.3f' % [1.2, 0.48]
