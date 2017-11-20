@@ -1,10 +1,7 @@
-def greeting(country = 'japan')
-  if country == 'japan'
-    'こんにちは'
-  else
-    'hello'
-  end
+def default_args(a, b, c = 0, d = 0)
+  "a=#{a}, b=#{b}, c=#{c}, d=#{d}"
 end
 
-p greeting
-p greeting('us')
+p default_args(1, 2)
+p default_args(1, 2, 3)
+p default_args(1, 2, 3, 4)
