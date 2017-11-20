@@ -1,4 +1,11 @@
-n = 11
-message = n > 10 ? '10より大きい' : '10以下'
-
-p message
+def greeting(country)
+  if country == 'japan'
+    'こんにちは'
+  else
+    'hello'
+  end
+end
+  
+# p greeting
+p greeting('us')
+p greeting('us', 'japan')
