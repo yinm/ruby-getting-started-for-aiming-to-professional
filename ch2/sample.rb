@@ -1,9 +1,15 @@
-def foo(time = Time.now, message = bar)
-  puts "time: #{time}, message: #{message}"
-end
+p ''.empty?
+p 'abc'.empty?
 
-def bar
-  'BAR'
-end
+p 'watch'.include?('at')
+p 'watch'.include?('in')
 
-foo
+p 1.odd?
+p 2.odd?
+
+p 1.even?
+p 2.even?
+
+p nil.nil?
+p 'abc'.nil?
+p 1.nil?
