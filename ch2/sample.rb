@@ -1,12 +1,4 @@
-a = 'hello'
-b = 'hello'
-c = b
+# Date.today
 
-def m!(d)
-  d.upcase!
-end
-m!(c)
-
-p b
-p c
-p a
+require 'date'
+p Date.today
