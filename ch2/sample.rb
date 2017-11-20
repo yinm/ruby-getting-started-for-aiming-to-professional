@@ -1,21 +1,11 @@
-country = 'italy'
-
-if country == 'japan'
-  p 'こんにちは'
-elsif country == 'us'
-  p 'Hello'
-elsif country == 'italy'
-  p 'ciao'
-else
-  p '????'
-end
+country = 'アメリカ'
 
 case country
-  when 'japan'
+  when 'japan', '日本'
     p 'こんにちは'
-  when 'us'
+  when 'us', 'アメリカ'
     p 'Hello'
-  when 'italy'
+  when 'italy', 'イタリア'
     p 'ciao'
   else
     p '????'
