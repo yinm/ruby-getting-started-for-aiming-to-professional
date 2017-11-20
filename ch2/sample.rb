@@ -1,15 +1,2 @@
-country = 'italy'
-
-message =
-  case country
-    when 'japan'
-      'こんにちは'
-    when 'us'
-      'Hello'
-    when 'italy'
-      'ciao'
-    else
-      '????'
-  end
-
-p message
+n = 11
+p n > 10 ? '10より大きい' : '10以下'
