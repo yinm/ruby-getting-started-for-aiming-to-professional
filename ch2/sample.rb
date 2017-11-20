@@ -1,7 +1,7 @@
-a = 'ruby'
+def reverse_upcase!(s)
+  s.reverse!.upcase!
+end
 
-p a.upcase
-p a
-
-p a.upcase!
-p a
+s = 'ruby'
+p reverse_upcase!(s)
+p s
