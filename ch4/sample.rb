@@ -1,2 +1,3 @@
 a = [1, 2, 3]
-p a[100]
+p a.size
+p a.length
