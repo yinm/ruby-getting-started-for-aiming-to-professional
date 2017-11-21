@@ -7,3 +7,4 @@ numbers.each do |n|
 end
 
 p sum
+p sum_value
