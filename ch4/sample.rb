@@ -1,3 +1,2 @@
-p '0.'.rjust(5)
-p '0'.rjust(5, '0')
-p '0'.rjust(5, '_')
+p 0.to_s(16).rjust(2, '0')
+p 255.to_s(16).rjust(2, '0')
