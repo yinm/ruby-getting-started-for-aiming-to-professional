@@ -1,4 +1,3 @@
-hex = '#12abcd'
-p hex[1..2]
-p hex[3..4]
-p hex[5..6]
+p '00'.hex
+p 'ff'.hex
+p '2a'.hex
