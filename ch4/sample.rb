@@ -1,1 +1,3 @@
-p %w(big\ apple small\ melon orange)
+prefix = 'This is'
+
+p %W(#{prefix}\ an\ apple small\ melon orange)
