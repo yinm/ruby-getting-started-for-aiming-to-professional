@@ -1,6 +1,6 @@
-a = [1, 2, 3, 1, 2, 3]
-p a.delete(2)
-p a
+a = [1]
+b = [2, 3]
 
-p a.delete(5)
+p a.concat(b)
 p a
+p b
