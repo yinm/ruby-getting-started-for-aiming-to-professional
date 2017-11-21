@@ -1,5 +1,7 @@
-a = []
-b = [2, 3]
+def greeting(*names)
+  "#{names.join('と')}、こんにちは！"
+end
 
-p a.push(1)
-p a.push(*b)
+p greeting('田中さん')
+p greeting('田中さん', '鈴木さん')
+p greeting('田中ｓん', '鈴木さん', '佐藤さん')
