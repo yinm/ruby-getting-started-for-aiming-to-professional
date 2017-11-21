@@ -1,7 +1,8 @@
-p 14.divmod(3)
+numbers = [1, 2, 3, 4]
+sum = 0
 
-quo_rem = 14.divmod(3)
-p "商=#{quo_rem[0]}, 余り=#{quo_rem[1]}"
+numbers.each do |n|
+  sum += n
+end
 
-quotient, remainder = 14.divmod(3)
-p "商=#{quotient}, 余り=#{remainder}"
+p sum
