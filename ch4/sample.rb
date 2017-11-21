@@ -1,10 +1,12 @@
-a = Array.new(5) { 'default' }
+a = 'abcde'
+
+p a[2]
+p a[1, 3]
+p a[-1]
+
+a[0] = 'X'
 p a
-
-str = a[0]
-p str
-
-str.upcase!
-p str
-
+a[1, 3] = 'Y'
+p a
+a << 'PGR'
 p a
