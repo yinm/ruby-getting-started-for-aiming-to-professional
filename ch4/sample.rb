@@ -1,4 +1,4 @@
-sum = 0
+numbers = []
 
-(1..4).each { |n| sum += n }
-p sum
+(1..10).step(2) { |n| numbers << n }
+p numbers
