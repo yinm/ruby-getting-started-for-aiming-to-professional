@@ -1,6 +1,11 @@
-a = [1, 2, 3]
-p a.delete_at(1)
+a, b = [1, 2]
 p a
+p b
 
-p a.delete_at(100)
-p a
+c, d = [10]
+p c
+p d
+
+e, f = [100, 200, 300]
+p e
+p f
