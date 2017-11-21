@@ -1,4 +1,11 @@
-p [1, 2, 3] == [1, 2, 3]
-p [1, 2, 3] == [1, 2, 4]
-p [1, 2, 3] == [1, 2]
-p [1, 2, 3] == [1, 2, 3, 4]
+p ['apple', 'melon', 'orange']
+
+p %w!apple melon orange!
+p %w(apple melon orange)
+
+p %w(
+  apple
+  melon
+  orange
+)
+
