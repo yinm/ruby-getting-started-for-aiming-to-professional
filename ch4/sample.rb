@@ -1,4 +1,5 @@
-numbers = [1, 2, 3, 4, 5, 6]
+numbers = [1, 2, 3, 4]
+sum = 0
 
-even_number = numbers.find { |n| n.even? }
-p even_number
+numbers.each { |n| sum += n }
+p sum
