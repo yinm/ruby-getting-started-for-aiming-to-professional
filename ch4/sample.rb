@@ -1,8 +1,5 @@
-p (1..5).to_a
-p (1...5).to_a
+numbers = (1..4).to_a
+sum = 0
 
-p ('a'..'e').to_a
-p ('a'...'e').to_a
-
-p ('bad'..'bag').to_a
-p ('bad'...'bag').to_a
+numbers.each { |n| sum += n }
+p sum
