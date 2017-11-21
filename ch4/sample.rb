@@ -1,12 +1,3 @@
-a = 'abcde'
+fruits = ['apple', 'orange', 'melon']
 
-p a[2]
-p a[1, 3]
-p a[-1]
-
-a[0] = 'X'
-p a
-a[1, 3] = 'Y'
-p a
-a << 'PGR'
-p a
+fruits.each_with_index { |fruit, i| puts "#{i}: #{fruit}" }
