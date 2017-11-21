@@ -1,3 +1,1 @@
-p '00'.hex
-p 'ff'.hex
-p '2a'.hex
+p '#12abcd'.scan(/\w\w/)
