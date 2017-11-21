@@ -1,4 +1,5 @@
-[プロを目指す人のためのRuby入門](https://ruby-book.jnito.com/)をやってます。
+* [プロを目指す人のためのRuby入門](https://ruby-book.jnito.com/)をやってます。
+* [プロを目指す人のためのRuby入門_お詫びと訂正](http://gihyo.jp/book/2017/978-4-7741-9397-7/support)
 
 ---
 
