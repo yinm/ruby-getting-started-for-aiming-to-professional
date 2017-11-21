@@ -1,5 +1,6 @@
 numbers = [1, 2, 3, 4]
 sum = 0
+sum_value = 100
 
 numbers.each do |n|
   sum_value = n.even? ? n * 10 : n
