@@ -1,3 +1,1 @@
-numbers = [1, 2, 3, 4]
-sum = numbers.inject(0) { |result, n| result + n }
-p sum
+p ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].inject('Sun') { |result, s| result + s }
