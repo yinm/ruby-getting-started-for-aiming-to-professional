@@ -4,10 +4,6 @@ dimensions = [
     [50, 60],
 ]
 
-areas = []
-
-dimensions.each do |length, width|
-  areas << length * width
+dimensions.each do |length, width, foo, bar|
+  p [length, width, foo, bar]
 end
-
-p areas
