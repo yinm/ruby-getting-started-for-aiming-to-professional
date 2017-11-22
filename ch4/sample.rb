@@ -1,4 +1,4 @@
 fruits = ['apple', 'orange', 'melon']
-p fruits.each
-p fruits.map
-p fruits.delete_if
+
+fruits.each.with_index(1) { |fruit, i| puts "#{i}: #{fruit}" }
+p fruits.map.with_index(10) { |fruit, i| "#{i}: #{fruit}" }
