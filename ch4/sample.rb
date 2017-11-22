@@ -1,9 +1,9 @@
 dimensions = [
-    [10, 20],
-    [30, 40],
-    [50, 60],
+    [10, 20, 100],
+    [30, 40, 200],
+    [50, 60, 300],
 ]
 
-dimensions.each do |length, width, foo, bar|
-  p [length, width, foo, bar]
+dimensions.each do |length, width|
+  p [length, width]
 end
