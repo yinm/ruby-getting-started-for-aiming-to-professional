@@ -6,9 +6,7 @@ dimensions = [
 
 areas = []
 
-dimensions.each do |dimension|
-  length = dimension[0]
-  width = dimension[1]
+dimensions.each do |length, width|
   areas << length * width
 end
 
