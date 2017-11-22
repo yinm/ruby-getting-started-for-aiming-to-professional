@@ -1,10 +1,5 @@
-numbers = [1, 2, 3, 4]
-sum = 0
-
-numbers.each do |n; sum|
-  sum = 10
-  sum += n
-  p sum
+File.open("./sample.txt", "w") do |file|
+  file.puts('1行目のテキストです。')
+  file.puts('2行目のテキストです。')
+  file.puts('3行目のテキストです。')
 end
-
-p sum
