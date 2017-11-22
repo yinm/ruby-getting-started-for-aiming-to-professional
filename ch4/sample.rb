@@ -1,9 +1,11 @@
 dimensions = [
-    [10, 20, 100],
-    [30, 40, 200],
-    [50, 60, 300],
+    [10, 20],
+    [30, 40],
+    [50, 60],
 ]
 
-dimensions.each do |length, width|
-  p [length, width]
+dimensions.each_with_index do |dimension, i|
+  length = dimension[0]
+  width = dimension[1]
+  puts "length: #{length}, width: #{width}, i: #{i}"
 end
