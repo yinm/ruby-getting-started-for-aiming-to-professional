@@ -4,8 +4,6 @@ dimensions = [
     [50, 60],
 ]
 
-dimensions.each_with_index do |dimension, i|
-  length = dimension[0]
-  width = dimension[1]
-  puts "length: #{length}, width: #{width}, i: #{i}"
+dimensions.each_with_index do |(length, width), i|
+  puts "length: #{length}, width: #{width}, i #{i}"
 end
