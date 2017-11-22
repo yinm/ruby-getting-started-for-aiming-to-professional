@@ -1,4 +1,15 @@
-fruits = ['apple', 'orange', 'melon']
+dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
 
-fruits.each.with_index(1) { |fruit, i| puts "#{i}: #{fruit}" }
-p fruits.map.with_index(10) { |fruit, i| "#{i}: #{fruit}" }
+areas = []
+
+dimensions.each do |dimension|
+  length = dimension[0]
+  width = dimension[1]
+  areas << length * width
+end
+
+p areas
