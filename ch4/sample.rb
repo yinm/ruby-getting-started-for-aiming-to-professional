@@ -1,9 +1,10 @@
-dimensions = [
-    [10, 20],
-    [30, 40],
-    [50, 60],
-]
+numbers = [1, 2, 3, 4]
+sum = 0
 
-dimensions.each_with_index do |(length, width), i|
-  puts "length: #{length}, width: #{width}, i #{i}"
+numbers.each do |n; sum|
+  sum = 10
+  sum += n
+  p sum
 end
+
+p sum
