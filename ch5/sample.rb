@@ -1,1 +1,2 @@
-p {}.class
+hash = { 'japan' => 'yen', 'us' => 'doller', 'india' => 'rupee' }
+p hash
