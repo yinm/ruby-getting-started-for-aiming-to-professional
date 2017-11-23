@@ -1,2 +1,5 @@
 currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
-p currencies['brazil']
+
+currencies.each do |key, value|
+  puts "#{key} : #{value}"
+end
