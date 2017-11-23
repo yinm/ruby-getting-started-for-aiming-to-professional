@@ -1,19 +1,9 @@
-numbers = [1, 2, 3, 4, 5]
-i = 0
+foods = ['ピーマン', 'トマト', 'セロリ']
 
-while i < numbers.size
-  n = numbers[i]
-  i += 1
-  next if n.even?
-  puts n
-end
+foods.each do |food|
+  print "#{food}は好きですか？ => "
+  answer = ['はい', 'いいえ'].sample
+  puts answer
 
-fruits = ['apple', 'melon', 'orange']
-members = [1, 2, 3, 4]
-
-fruits.each do |fruit|
-  numbers.each do |n|
-    next if n.even?
-    puts "#{fruit}, #{n}"
-  end
+  redo unless answer == 'はい'
 end
