@@ -10,4 +10,4 @@ def buy_burger(menu, drink: true, potato: true)
   end
 end
 
-buy_burger('fish', potato: false, drink: true)
+buy_burger('fish', salad: true)
