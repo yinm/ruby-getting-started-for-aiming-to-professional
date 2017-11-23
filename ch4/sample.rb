@@ -1,6 +1,19 @@
 numbers = [1, 2, 3, 4, 5]
+i = 0
 
-numbers.each do |n|
+while i < numbers.size
+  n = numbers[i]
+  i += 1
   next if n.even?
   puts n
+end
+
+fruits = ['apple', 'melon', 'orange']
+members = [1, 2, 3, 4]
+
+fruits.each do |fruit|
+  numbers.each do |n|
+    next if n.even?
+    puts "#{fruit}, #{n}"
+  end
 end
