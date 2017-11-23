@@ -1,13 +1,6 @@
-def calc_with_return
-  numbers = [1, 2, 3, 4, 5, 6]
-  target = nil
+numbers = [1, 2, 3, 4, 5]
 
-  numbers.shuffle.each do |n|
-    target = n
-    return if n.even?
-  end
-
-  target * 10
+numbers.each do |n|
+  next if n.even?
+  puts n
 end
-
-p calc_with_return
