@@ -1,10 +1,7 @@
-numbers = [1, 2, 3, 4]
-sum = 0
+numbers = [1, 2, 3, 4, 5]
 
-for n in numbers
-  sum_value = n.even? ? n * 10 : n
-  sum += sum_value
+loop do
+  n = numbers.sample
+  puts n
+  break if n == 5
 end
-
-p n
-p sum_value
