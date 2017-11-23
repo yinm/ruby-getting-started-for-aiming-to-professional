@@ -6,7 +6,7 @@ catch :done do
     numbers.shuffle.each do |n|
       puts "#{fruit}, #{n}"
       if fruit == 'orange' && n == 3
-        throw :done
+        throw :foo
       end
     end
   end
