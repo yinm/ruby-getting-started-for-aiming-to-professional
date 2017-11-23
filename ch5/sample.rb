@@ -1,2 +1,2 @@
-p :apple.class
-p 'apple'.class
+p 'apple' == 'apple'
+p :apple == :apple
