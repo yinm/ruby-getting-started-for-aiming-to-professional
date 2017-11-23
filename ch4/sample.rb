@@ -1,4 +1,3 @@
-sum = 0
-
-5.times { sum += 1 }
-p sum
+a = []
+10.upto(14) { |n| a << n }
+p a
