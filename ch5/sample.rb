@@ -1,4 +1,4 @@
-def buy_burger(menu, drink: true, potato: true)
+def buy_burger(menu, drink:, potato:)
   puts "buy #{menu} burger"
 
   if drink
@@ -10,4 +10,5 @@ def buy_burger(menu, drink: true, potato: true)
   end
 end
 
-buy_burger('fish', salad: true)
+buy_burger('cheese', drink: true, potato: true)
+buy_burger('fish', potato: false)
