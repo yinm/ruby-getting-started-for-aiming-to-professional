@@ -1,5 +1,4 @@
-a = {}.size
-p a
+currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
 
-b = { 'x' => 1, 'y' => 2, 'z' => 3 }.size
-p b
+p currencies.delete('japan')
+p currencies
