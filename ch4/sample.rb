@@ -1,11 +1,13 @@
-ret =
-  catch :done do
-    throw :done
-  end
-p ret
+def calc_with_break
+  numbers = [1, 2, 3, 4, 5, 6]
+  target = nil
 
-ret =
-  catch :done do
-    throw :done, 123
+  numbers.shuffle.each do |n|
+    target = n
+    break if n.even?
   end
-p ret
+
+  target * 10
+end
+
+p calc_with_break
