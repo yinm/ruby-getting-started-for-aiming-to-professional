@@ -1,7 +1,10 @@
-currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
+a = { 'x' => 1, 'y' => 2, 'z' => 3 }
 
-currencies.each do |key_value|
-  key = key_value[0]
-  value = key_value[1]
-  puts "#{key} : #{value}"
-end
+b = { 'x' => 1, 'y' => 2, 'z' => 3 }
+p a == b
+
+c = { 'z' => 3, 'y' => 2, 'x' => 1 }
+p a == c
+
+d = { 'x' => 10, 'y' => 2, 'z' => 3 }
+p a == d
