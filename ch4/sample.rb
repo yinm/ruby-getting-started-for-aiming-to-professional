@@ -1,7 +1,11 @@
-a = [10, 20, 30, 40, 50]
+numbers = [1, 2, 3, 4]
+sum = 0
 
-until a.size <= 3
-  a.delete_at(-1)
+for n in numbers
+  sum += n
 end
+p sum
 
-p a
+sum = 0
+for n in numbers do sum += n end
+p sum
