@@ -1,3 +1,6 @@
 a = []
-10.step(1, -2) { |n| a << n }
+while a.size < 5
+  a << 1
+end
+
 p a
