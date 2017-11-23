@@ -1,3 +1,11 @@
 a = []
-a << 1 while a.size < 5
+
+while false
+  a << 1
+end
+p a
+
+begin
+  a << 1
+end while false
 p a
