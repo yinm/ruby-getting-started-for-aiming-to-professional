@@ -1,7 +1,2 @@
-hash = {
-  'japan' => 'yen',
-  'us' => 'dollar',
-  'india' => 'rupee',
-}
-
+hash = {'japan' => 'yen', 'japan' => '円'}
 p hash
