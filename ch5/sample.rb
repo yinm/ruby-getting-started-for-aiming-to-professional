@@ -1,2 +1,3 @@
-hash = {'japan' => 'yen', 'japan' => '円'}
-p hash
+h = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
+
+[1, 2, 3].each { |n| puts n }
