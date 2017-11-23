@@ -1,6 +1,5 @@
-string = 'apple'
-string.upcase!
-p string
+currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
+p currencies['japan']
 
-symbol = :apple
-p symbol.upcase!
+currencies = { :japan => 'yen', :us => 'dollar', :india => 'rupee' }
+p currencies[:japan]
