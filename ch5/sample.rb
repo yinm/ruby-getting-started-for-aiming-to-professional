@@ -1,2 +1,7 @@
-currencies = { japan: 'yen', us: 'dollar', india: 'rupee' }
-p currencies[:us]
+hash = { 'abc' => 123, def: 456 }
+
+p hash['abc']
+p hash[:def]
+
+p hash[:abc]
+p hash['def']
