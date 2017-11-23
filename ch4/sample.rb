@@ -1,9 +1,10 @@
 numbers = [1, 2, 3, 4]
 sum = 0
 
-numbers.each do |n|
+for n in numbers
   sum_value = n.even? ? n * 10 : n
   sum += sum_value
 end
-# p n
+
+p n
 p sum_value
