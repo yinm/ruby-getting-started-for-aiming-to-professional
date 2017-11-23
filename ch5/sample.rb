@@ -1,11 +1,14 @@
-person = {
-  name: 'Alice',
-  age: 20,
-  friends: ['Bob', 'Carol'],
-  phones: { home: '1234-0000', mobile: '5678-0000' }
-}
+def buy_burger(menu, drink, potato)
+  puts "buy #{menu} burger"
 
-p person[:name]
-p person[:age]
-p person[:friends]
-p person[:phones][:mobile]
+  if drink
+    puts 'with drink'
+  end
+
+  if potato
+    puts 'with potato'
+  end
+end
+
+buy_burger('cheese', true, true)
+buy_burger('fish', true, false)
