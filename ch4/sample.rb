@@ -1,6 +1,3 @@
 a = []
-while a.size < 5
-  a << 1
-end
-
+while a.size < 5 do a << 1 end
 p a
