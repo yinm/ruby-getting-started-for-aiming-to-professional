@@ -1,7 +1,2 @@
-numbers = [1, 2, 3, 4, 5]
-
-while true
-  n = numbers.sample
-  puts n
-  break if n == 5
-end
+p (1..4).map { |n| n * 10 }
+p 1.upto(5).select { |n| n.odd? }
