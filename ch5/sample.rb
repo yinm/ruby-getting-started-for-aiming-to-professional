@@ -1,7 +1,6 @@
-p :apple.object_id
-p :apple.object_id
-p :apple.object_id
+string = 'apple'
+string.upcase!
+p string
 
-p 'apple'.object_id
-p 'apple'.object_id
-p 'apple'.object_id
+symbol = :apple
+p symbol.upcase!
