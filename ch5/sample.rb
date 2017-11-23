@@ -1,3 +1,4 @@
-h = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
+currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
+currencies['italy'] = 'euro'
 
-[1, 2, 3].each { |n| puts n }
+p currencies
