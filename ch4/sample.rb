@@ -1,11 +1,7 @@
-a = []
+a = [10, 20, 30, 40, 50]
 
-while false
-  a << 1
+until a.size <= 3
+  a.delete_at(-1)
 end
-p a
 
-begin
-  a << 1
-end while false
 p a
