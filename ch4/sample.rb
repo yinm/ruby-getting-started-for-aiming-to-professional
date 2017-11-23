@@ -1,8 +1,6 @@
-p [1, 2, 3].class
-p Array.include?(Enumerable)
+numbers = [1, 2, 3, 4, 5].shuffle
 
-p (1..3).class
-p Range.include?(Enumerable)
-
-p 1.upto(3).class
-p Enumerator.include?(Enumerable)
+numbers.each do |n|
+  puts n
+  break if n == 5
+end
