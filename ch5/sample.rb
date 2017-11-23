@@ -1,4 +1,4 @@
 currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
-currencies['italy'] = 'euro'
+currencies['japan'] = '円'
 
 p currencies
