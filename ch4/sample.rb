@@ -1,11 +1,9 @@
-ret =
-  while true
-    break
-  end
-p ret
+fruits = ['apple', 'melon', 'orange']
+numbers = [1, 2, 3]
 
-ret =
-  while true
-    break 123
+fruits.each do |fruit|
+  numbers.shuffle.each do |n|
+    puts "#{fruit}, #{n}"
+    break if n == 3
   end
-p ret
+end
