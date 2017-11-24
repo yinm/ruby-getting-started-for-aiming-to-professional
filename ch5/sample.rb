@@ -1,2 +1,2 @@
-array = [1, 2, 3, 4]
-array.to_h
+array = [[:japan, 'yen'], [:japan, '円']]
+p array.to_h
