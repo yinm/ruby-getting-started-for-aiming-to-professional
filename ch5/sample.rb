@@ -1,8 +1,6 @@
-h = Hash.new('hello')
+h = Hash.new { 'hello' }
 a = h[:foo]
 b = h[:bar]
-
-p h
 
 p a.equal?(b)
 
