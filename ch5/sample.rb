@@ -1,2 +1,2 @@
-hash = { 'abc': 123 }
-p hash
+p %s!ruby is fun!
+p %s(ruby is fun)
