@@ -1,2 +1,13 @@
 h = Hash.new('hello')
-p h[:foo]
+a = h[:foo]
+b = h[:bar]
+
+p h
+
+p a.equal?(b)
+
+a.upcase!
+p a
+p b
+
+p h
