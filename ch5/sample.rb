@@ -1,16 +1,5 @@
-def buy_burger(menu, options = {})
-  drink = options[:drink]
-  potato = options[:potato]
-
-  puts "buy #{menu} burger"
-
-  if drink
-    puts 'with drink'
-  end
-
-  if potato
-    puts 'with potato'
-  end
+def buy_burger(menu, drink: true, potato: true, **others)
+  puts others
 end
 
-buy_burger('cheese', drink: true, potato: true)
+buy_burger('fish', drink: true, potato: false, salad: true, chicken: false)
