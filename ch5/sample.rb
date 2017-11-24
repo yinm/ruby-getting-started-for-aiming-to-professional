@@ -1,3 +1,5 @@
-currencies = { japan: 'yen', us: 'dollar', india: 'rupee' }
-p currencies.has_key?(:japan)
-p currencies.has_key?(:italy)
+h = { us: 'dollar', india: 'rupee' }
+merged_h = { japan: 'yen', **h }
+p merged_h
+
+{ japan: 'yen', h }
