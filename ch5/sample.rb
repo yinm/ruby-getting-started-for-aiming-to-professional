@@ -1,2 +1,2 @@
-name = 'Alice'
-p :"#{name.upcase}"
+hash = { 'abc': 123 }
+p hash
