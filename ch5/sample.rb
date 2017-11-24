@@ -1,2 +1,2 @@
-currencies = { japan: 'yen', us: 'dollar', india: 'rupee' }
-p currencies.to_a
+array = [[:japan, 'yen'], [:us, 'dollar'], [:india, 'rupee']]
+p array.to_h
