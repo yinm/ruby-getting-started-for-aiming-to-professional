@@ -1,6 +1,5 @@
-string = 'apple'
-symbol = :apple
+p 'apple'.respond_to?('include?')
+p 'apple'.respond_to?(:include?)
 
-p symbol.to_s
-p string == symbol.to_s
-p string + symbol.to_s
+p 'apple'.respond_to?('foo_bar')
+p 'apple'.respond_to?(:foo_bar)
