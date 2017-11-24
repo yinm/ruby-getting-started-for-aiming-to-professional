@@ -1,11 +1,5 @@
-h = Hash.new { 'hello' }
-a = h[:foo]
-b = h[:bar]
-
-p a.equal?(b)
-
-a.upcase!
-p a
-p b
+h = Hash.new { |hash, key| hash[key] = 'hello' }
+h[:foo]
+h[:bar]
 
 p h
