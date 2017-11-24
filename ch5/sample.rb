@@ -1,4 +1,5 @@
-name = 'Alice'
+string = 'apple'
+symbol = :apple
 
-p %i(hello\ngood-bye #{name.upcase)
-p %I(hello\ngood-bye #{name.upcase})
+p string == symbol
+p string + symbol
