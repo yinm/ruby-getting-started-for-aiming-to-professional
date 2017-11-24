@@ -1,5 +1,5 @@
 string = 'apple'
 symbol = :apple
 
-p string == symbol
-p string + symbol
+p string.to_sym
+p string.to_sym == symbol
