@@ -1,5 +1,3 @@
 h = { us: 'dollar', india: 'rupee' }
-merged_h = { japan: 'yen', **h }
+merged_h = { japan: 'yen' }.merge(h)
 p merged_h
-
-{ japan: 'yen', h }
