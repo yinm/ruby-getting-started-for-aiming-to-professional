@@ -1,6 +1,6 @@
-def buy_burger(menu, options = {})
+def buy_burger(options = {}, menu)
   puts options
 end
 
-buy_burger('fish', {'drink' => true, 'potato' => false})
-buy_burger('fish', 'drink' => true, 'potato' => false)
+# buy_burger('drink' => true, 'potato' => false, 'fish')
+buy_burger({'drink' => true, 'potato' => false}, 'fish')
