@@ -1,6 +1,2 @@
-def buy_burger(menu, options = {})
-  puts options
-end
-
-buy_burger 'fish', {'drink' => true, 'potato' => false}
-buy_burger 'fish', 'drink' => true, 'potato' => false
+currencies = { japan: 'yen', us: 'dollar', india: 'rupee' }
+p currencies.to_a
