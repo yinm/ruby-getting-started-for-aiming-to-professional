@@ -1,1 +1,3 @@
-p Regexp.new('\d{3}-\d{4}')
+p /http:\/\/example\.com/
+p %r!http://example\.com!
+p %r{http://example\.com}
