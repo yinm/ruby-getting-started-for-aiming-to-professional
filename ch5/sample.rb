@@ -3,13 +3,7 @@ def find_user
 end
 
 def user_exists?
-  user = find_user
-
-  if user
-    true
-  else
-    false
-  end
+  !!find_user
 end
 
 p user_exists?
