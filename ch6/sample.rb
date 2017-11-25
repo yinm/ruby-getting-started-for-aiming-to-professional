@@ -1,4 +1,3 @@
 text = '123,456-789'
-hash = { ',' => ':', '-' => '/' }
+p text.gsub(/,|-/) { |matched| matched == ',' ? ':' : '/' }
 
-p text.gsub(/,|-/, hash)
