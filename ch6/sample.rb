@@ -1,10 +1,5 @@
 text = '私の誕生日は1977年7月17日です。'
-m = /(?<year>\d+)年(?<month>\d+)月(?<day>\d+)日/.match(text)
 
-p m[:year]
-p m[:month]
-p m[:day]
-
-p m['year']
-
-p m[2]
+if /(?<year>\d+)年(?<month>\d+)月(?<day>\d+)日/ =~ text
+  puts "#{year}/#{month}/#{day}"
+end
