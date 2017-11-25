@@ -1,2 +1,2 @@
-p "Hello\nBye" =~ /Hello.Bye/
-p "Hello\nBye" =~ /Hello.Bye/m
+regexp = Regexp.new('Hello.Bye', Regexp::MULTILINE)
+p "Hello\nBye" =~ regexp
