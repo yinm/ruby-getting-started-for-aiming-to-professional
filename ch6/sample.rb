@@ -1,2 +1,2 @@
-regexp = Regexp.new('hello', Regexp::IGNORECASE)
-p 'HELLO' =~ regexp
+p "Hello\nBye" =~ /Hello.Bye/
+p "Hello\nBye" =~ /Hello.Bye/m
