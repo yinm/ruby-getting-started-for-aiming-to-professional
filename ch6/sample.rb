@@ -1,2 +1,2 @@
-p 'HELLO' =~ /hello/i
-p 'HELLO' =~ %r{hello}i
+regexp = Regexp.new('hello', Regexp::IGNORECASE)
+p 'HELLO' =~ regexp
