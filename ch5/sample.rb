@@ -4,9 +4,7 @@ def find_currency(country)
 end
 
 def show_currency(country)
-  currency = find_currency(country)
-
-  if currency
+  if currency = find_currency(country)
     currency.upcase
   end
 end
