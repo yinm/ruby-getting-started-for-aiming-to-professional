@@ -1,2 +1,7 @@
-regexp = Regexp.new('Hello.Bye', Regexp::MULTILINE)
-p "Hello\nBye" =~ regexp
+regexp = /
+  \d{3} # 郵便番号の先頭3桁
+  -     # 区切り文字のハイフン
+  \d{4} # 郵便番号の末尾4桁
+/x
+
+p '123-4567' =~ regexp
