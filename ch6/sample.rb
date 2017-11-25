@@ -1,2 +1,2 @@
-regexp = /\d{3}-\d{4}/
-p regexp.class
+p '123-4567' =~ /\d{3}-\d{4}/
+p 'hello' =~ /\d{3}-\d{4}/
