@@ -1,3 +1,1 @@
-text = '123,456-789'
-text.gsub!(/,|-/, ':')
-p text
+p Regexp.new('\d{3}-\d{4}')
