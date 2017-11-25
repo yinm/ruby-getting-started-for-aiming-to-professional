@@ -1,7 +1,15 @@
-limit = nil
-limit ||= 10
-p limit
+def find_user
+  'alice'
+end
 
-limit = 20
-limit ||= 10
-p limit
+def user_exists?
+  user = find_user
+
+  if user
+    true
+  else
+    false
+  end
+end
+
+p user_exists?
