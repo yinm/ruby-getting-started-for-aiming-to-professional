@@ -1,5 +1,7 @@
-a = 'foo'
-p a&.upcase
+limit = nil
+limit ||= 10
+p limit
 
-a = nil
-p a&.upcase
+limit = 20
+limit ||= 10
+p limit
