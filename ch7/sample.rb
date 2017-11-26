@@ -4,12 +4,10 @@ class User
   end
 
   def hello
-    "Hello, I am #{@name}."
+    shuffled_name = @name.chars.shuffle.join
+    "Hello, I am #{shuffled_name}."
   end
 end
 
 alice = User.new('Alice')
 puts alice.hello
-
-bob = User.new('Bob')
-puts bob.hello
