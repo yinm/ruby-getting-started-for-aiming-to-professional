@@ -1,8 +1,15 @@
 class User
+  def initialize(name)
+    @name = name
+  end
+
   def hello
-    "Hello!"
+    "Hello, I am #{@name}."
   end
 end
 
-user = User.new
-puts user.hello
+alice = User.new('Alice')
+puts alice.hello
+
+bob = User.new('Bob')
+puts bob.hello
