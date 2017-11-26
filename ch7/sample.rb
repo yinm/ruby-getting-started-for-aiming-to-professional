@@ -4,4 +4,5 @@ class User
   end
 end
 
-User.new
+user = User.new
+user.initialize
