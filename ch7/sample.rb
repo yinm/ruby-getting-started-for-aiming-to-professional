@@ -4,7 +4,7 @@ class User
   end
 
   def hello
-    shuffled_name = @name.chars.shuffle.join
+    # shuffled_name = @name.chars.shuffle.join
     "Hello, I am #{shuffled_name}."
   end
 end
