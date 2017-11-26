@@ -1,5 +1,5 @@
 class User
-  attr_reader :name
+  attr_writer :name
 
   def initialize(name)
     @name = name
@@ -7,6 +7,6 @@ class User
 end
 
 user = User.new('Alice')
-p user.name
-
 user.name = 'Bob'
+
+p user.name
