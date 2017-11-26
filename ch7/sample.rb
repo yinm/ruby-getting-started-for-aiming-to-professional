@@ -3,10 +3,15 @@ class User
     @name = name
   end
 
-  # def name
-  #   @name
-  # end
+  def name
+    @name
+  end
+
+  def name=(value)
+    @name = value
+  end
 end
 
 user = User.new('Alice')
-puts user.name
+user.name = 'Bob'
+p user.name
