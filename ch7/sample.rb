@@ -19,3 +19,9 @@ end
 users.each do |user|
   puts "氏名: #{full_name(user)}、 年齢: #{user.age}"
 end
+
+p users[0].first_name
+# p users[0].first_mame
+
+# users[0].country = 'japan'
+# users[0].first_name = 'Carol'
