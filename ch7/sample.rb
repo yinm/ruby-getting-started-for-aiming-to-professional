@@ -1,12 +1,15 @@
 class User
-  attr_accessor :name, :age
-
-  def initialize(name, age)
+  def initialize(name)
     @name = name
-    @age = age
+  end
+
+  def hello
+    "Hello, I am #{@name}"
   end
 end
 
-user = User.new('Alice', 20)
-p user.name
-p user.age
+alice = User.new('Alice')
+puts alice.hello
+
+bob = User.new('Bob')
+puts bob.hello
