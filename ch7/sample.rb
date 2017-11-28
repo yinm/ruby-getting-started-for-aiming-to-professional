@@ -1,30 +1,16 @@
-class User
-  attr_accessor :name
+class Foo
+  puts "クラス構文の直下のself: #{self}"
 
-  def initialize(name)
-    @name = name
+  def self.bar
+    puts "クラスメソッド内のself: #{self}"
   end
 
-  def rename_to_bob
-    name = 'bob'
-  end
-
-  def rename_to_carol
-    self.name = 'carol'
-  end
-
-  def rename_to_dave
-    @name = 'dave'
+  def baz
+    puts "インスタンスメソッド内のself: #{self}"
   end
 end
 
-user = User.new('Alice')
+Foo.bar
 
-user.rename_to_bob
-p user.name
-
-user.rename_to_carol
-p user.name
-
-user.rename_to_dave
-p user.name
+foo = Foo.new
+foo.baz
