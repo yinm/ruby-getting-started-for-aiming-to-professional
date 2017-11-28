@@ -1,9 +1,5 @@
 class Foo
-  # self.bar
-
-  def self.bar
-    puts 'hello'
+  3.times do
+    puts 'hello!'
   end
-
-  self.bar
 end
