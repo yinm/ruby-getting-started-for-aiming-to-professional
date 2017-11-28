@@ -46,4 +46,38 @@ p false || nil #=> nil
 p nil || false || 2 || 3 #=> 2
 ```
 
+## ch7
+
+### `attr_accessor`
+* getterとsetterを、少しの記述で定義できるメソッド
+
+```rb
+class Foo
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+end
+```
+
+以下の記述と同じになる
+
+```rb
+class Foo
+  def initialize(name)
+    @name = name
+  end
+
+  # getter
+  def name
+    @name
+  end
+
+  # setter
+  def name=(name)
+    @name = name
+  end
+end
+```
 
