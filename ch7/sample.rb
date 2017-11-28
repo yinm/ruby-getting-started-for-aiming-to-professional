@@ -1,4 +1,5 @@
 class User
 end
 
-p User.superclass
+user = User.new
+p user.methods.sort
