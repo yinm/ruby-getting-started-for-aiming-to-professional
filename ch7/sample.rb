@@ -1,25 +1,30 @@
 class User
-  # attr_accessor :name
+  attr_accessor :name
 
   def initialize(name)
     @name = name
   end
 
-  def hello
-    "Hello, I am #{name}."
+  def rename_to_bob
+    name = 'bob'
   end
 
-  def hi
-    "Hi, I am #{self.name}."
+  def rename_to_carol
+    self.name = 'carol'
   end
 
-  def my_name
-    "My name is #{@name}."
+  def rename_to_dave
+    @name = 'dave'
   end
 end
 
-
 user = User.new('Alice')
-# p user.hello
-p user.hi
-p user.my_name
+
+user.rename_to_bob
+p user.name
+
+user.rename_to_carol
+p user.name
+
+user.rename_to_dave
+p user.name
