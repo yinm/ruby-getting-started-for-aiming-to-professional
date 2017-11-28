@@ -11,7 +11,8 @@ class Product
   end
 
   def to_s
-    formatted_price = Product.format_price(price)
+    # 引数のprice は、 attr_reader で getter を設定しているから使える
+    formatted_price = self.class.format_price(price)
     "name: #{name}, price: #{formatted_price}"
   end
 end
