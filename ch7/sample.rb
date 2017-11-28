@@ -1,13 +1,9 @@
-class User
+class Product
 end
 
-user = User.new
+class DVD < Product
+end
 
-p user.instance_of?(User)
-p user.instance_of?(Object)
-
-p user.is_a?(User)
-p user.is_a?(Object)
-p user.is_a?(BasicObject)
-
-p user.is_a?(String)
+dvd = DVD.new
+p dvd.instance_of?(DVD)
+p dvd.is_a?(Product)
