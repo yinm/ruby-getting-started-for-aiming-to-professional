@@ -1,16 +1,25 @@
-class Product
-  DEFAULT_PRICE = 0
+class User
+  attr_accessor :name
 
-  def self.default_price
-    DEFAULT_PRICE
+  def initialize(name)
+    @name = name
   end
 
-  def default_price
-    DEFAULT_PRICE
+  def hello
+    "Hello, I am #{name}."
+  end
+
+  def hi
+    "Hi, I am #{self.name}."
+  end
+
+  def my_name
+    "My name is #{@name}."
   end
 end
 
-p Product.default_price
 
-product = Product.new
-p product.default_price
+user = User.new('Alice')
+p user.hello
+p user.hi
+p user.my_name
