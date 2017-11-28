@@ -1,14 +1,9 @@
 class Foo
+  # self.bar
+
   def self.bar
-    self.baz
+    puts 'hello'
   end
 
-  def baz
-    self.bar
-  end
+  self.bar
 end
-
-# Foo.bar
-
-foo = Foo.new
-foo.baz
