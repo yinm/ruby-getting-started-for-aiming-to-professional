@@ -1,16 +1,14 @@
 class Foo
-  puts "クラス構文の直下のself: #{self}"
-
   def self.bar
-    puts "クラスメソッド内のself: #{self}"
+    self.baz
   end
 
   def baz
-    puts "インスタンスメソッド内のself: #{self}"
+    self.bar
   end
 end
 
-Foo.bar
+# Foo.bar
 
 foo = Foo.new
 foo.baz
