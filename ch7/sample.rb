@@ -1,10 +1,14 @@
 class User
+  def hello
+    "Hello, I am #{self.name}"
+  end
+
   private
 
-  def hello
-    'Hello!'
+  def name
+    'Alice'
   end
 end
 
 user = User.new
-user.hello
+p user.hello
