@@ -1,11 +1,9 @@
 class User
-  class << self
-    private
-
-    def hello
-      'Hello!'
-    end
+  def self.hello
+    'Hello!'
   end
+
+  private_class_method :hello
 end
 
 User.hello
