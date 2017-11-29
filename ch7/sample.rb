@@ -1,11 +1,8 @@
-class Foo
-  def self.hello
-    'hello'
+class User
+  def hello
+    'Hello!'
   end
 end
 
-class Bar < Foo
-end
-
-p Foo.hello
-p Bar.hello
+user = User.new
+p user.hello
