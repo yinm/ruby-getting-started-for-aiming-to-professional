@@ -20,7 +20,7 @@ class DVD < Product
   end
 
   def to_s
-    "name: #{name}, price: #{price}, running_time: #{running_time}"
+    "#{super}, running_time: #{running_time}"
   end
 end
 
