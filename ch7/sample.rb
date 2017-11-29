@@ -1,6 +1,6 @@
 class User
   def hello
-    "Hello, I am #{self.name}"
+    "Hello, I am #{name}."
   end
 
   private
