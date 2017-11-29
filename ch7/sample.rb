@@ -7,16 +7,17 @@ class Product
   end
 end
 
-product = Product.new('A great movie', 1000)
-p product.name
-p product.price
-
 class DVD < Product
-  # def initialize(name, price)
-  #   super
-  # end
+  attr_reader :running_time
+
+  def initialize(name, price, running_time)
+    super(name, price)
+    @running_time = running_time
+  end
 end
 
-dvd = DVD.new('A great movie', 1000)
-p dvd.name
-p dvd.price
+product = Product.new('A great movie', 1000)
+p product.to_s
+
+dvd = DVD.new('An awesome film', 3000, 120)
+p dvd.to_s
