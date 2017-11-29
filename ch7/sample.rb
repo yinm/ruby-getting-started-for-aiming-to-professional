@@ -12,10 +12,11 @@ p product.name
 p product.price
 
 class DVD < Product
-  def initialize(name, price)
-    super()
-  end
+  # def initialize(name, price)
+  #   super
+  # end
 end
 
-
 dvd = DVD.new('A great movie', 1000)
+p dvd.name
+p dvd.price
