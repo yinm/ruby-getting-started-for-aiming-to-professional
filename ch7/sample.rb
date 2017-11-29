@@ -18,6 +18,10 @@ class DVD < Product
     super(name, price)
     @running_time = running_time
   end
+
+  def to_s
+    "name: #{name}, price: #{price}, running_time: #{running_time}"
+  end
 end
 
 product = Product.new('A great movie', 1000)
