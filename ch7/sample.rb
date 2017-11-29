@@ -1,9 +1,20 @@
 class User
-  def self.hello
-    'Hello!'
+  def foo
+    'foo'
   end
 
-  private_class_method :hello
+  def bar
+    'bar'
+  end
+
+  private :foo, :bar
+
+  def baz
+    'baz'
+  end
 end
 
-User.hello
+user = User.new
+# p user.foo
+# p user.bar
+p user.baz
