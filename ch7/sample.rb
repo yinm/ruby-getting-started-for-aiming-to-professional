@@ -1,14 +1,16 @@
-class User
-  def hello
-    "Hello, I am #{name}."
-  end
-
+class Product
   private
 
   def name
-    'Alice'
+    'A great movie'
   end
 end
 
-user = User.new
-p user.hello
+class DVD < Product
+  def to_s
+    "name: #{name}"
+  end
+end
+
+dvd = DVD.new
+p dvd.to_s
