@@ -9,8 +9,18 @@ class User
   def heavier_than?(other_user)
     other_user.weight < @weight
   end
+
+  protected
+
+  def weight
+    @weight
+  end
 end
 
 alice = User.new('Alice', 50)
 bob = User.new('Bob', 60)
-alice.heavier_than?(bob)
+
+p alice.heavier_than?(bob)
+p bob.heavier_than?(alice)
+
+alice.weight
