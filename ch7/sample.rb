@@ -1,20 +1,16 @@
 class User
-  def foo
-    'foo'
+  attr_reader :name
+
+  def initialize(name, weight)
+    @name = name
+    @weight = weight
   end
 
-  def bar
-    'bar'
-  end
-
-  private :foo, :bar
-
-  def baz
-    'baz'
+  def heavier_than?(other_user)
+    other_user.weight < @weight
   end
 end
 
-user = User.new
-# p user.foo
-# p user.bar
-p user.baz
+alice = User.new('Alice', 50)
+bob = User.new('Bob', 60)
+alice.heavier_than?(bob)
