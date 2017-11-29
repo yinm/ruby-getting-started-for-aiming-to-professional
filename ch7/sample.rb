@@ -1,9 +1,11 @@
 class User
-  private
+  class << self
+    private
 
-  def self.hello
-    'Hello!'
+    def hello
+      'Hello!'
+    end
   end
 end
 
-p User.hello
+User.hello
