@@ -1,15 +1,16 @@
-class User
-  def name
-    @name
-  end
+class Product
+  attr_reader :code, :name
   
-  def name=(value)
-    @name = value
+  def initialize(code, name)
+    @code = code
+    @name = name
   end
 end
 
-user = User.new
-p user.name
+a = Product.new('A-0001', 'A great movie')
+b = Product.new('B-0001', 'An awesome film')
+c = Product.new('A-0001', 'A great movie')
 
-user.name = 'Alice'
-p user.name
+p a == b
+p a == c
+p a == a
