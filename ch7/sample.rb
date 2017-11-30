@@ -1,5 +1,5 @@
 class Product
-  SOME_NAMES = ['Foo', 'Bar', 'Baz']
+  SOME_NAMES = ['Foo', 'Bar', 'Baz'].freeze
 
   def self.names_without_foo(names = SOME_NAMES)
     names.delete('Foo')
@@ -7,5 +7,4 @@ class Product
   end
 end
 
-p Product.names_without_foo
-p Product::SOME_NAMES
+Product.names_without_foo
