@@ -1,6 +1,5 @@
 class Product
-  SOME_NAMES = ['Foo', 'Bar', 'Baz'].freeze
+  SOME_NAMES = ['Foo'.freeze, 'Bar'.freeze, 'Baz'.freeze].freeze
 end
 
 Product::SOME_NAMES[0].upcase!
-p Product::SOME_NAMES
