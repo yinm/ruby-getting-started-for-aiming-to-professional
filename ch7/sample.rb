@@ -1,11 +1,6 @@
 class User
-  def hello
-    'Hello!'
-  end
-
-  alias greeting hello
+  undef freeze
 end
 
 user = User.new
-p user.hello
-p user.greeting
+user.freeze
