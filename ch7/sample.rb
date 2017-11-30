@@ -1,5 +1,25 @@
 class Product
-  SOME_NAMES = ['Foo', 'Bar', 'Baz'].map(&:freeze).freeze
+  # クラスインスタンス変数
+  @name = 'Product'
+
+  def self.name
+    # クラスインスタンス変数
+    @name
+  end
+
+  def initialize(name)
+    # インスタンス変数
+    @name = name
+  end
+
+  def name
+    # インスタンス変数
+    @name
+  end
 end
 
-Product::SOME_NAMES[0].upcase!
+
+product = Product.new('A great movie')
+p product.name
+
+p Product.name
