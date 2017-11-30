@@ -1,32 +1,28 @@
 class Product
-  # クラスインスタンス変数
-  @name = 'Product'
+  @@name = 'Product'
 
   def self.name
-    # クラスインスタンス変数
-    @name
+    @@name
   end
 
   def initialize(name)
-    # インスタンス変数
-    @name = name
+    @@name = name
   end
 
   def name
-    # インスタンス変数
-    @name
+    @@name
   end
 end
 
 class DVD < Product
-  @name = 'DVD'
+  @@name = 'DVD'
 
   def self.name
-    @name
+    @@name
   end
 
   def upcase_name
-    @name.upcase
+    @@name.upcase
   end
 end
 
@@ -36,9 +32,13 @@ p DVD.name
 product = Product.new('A great movie')
 p product.name
 
+p Product.name
+p DVD.name
+
 dvd = DVD.new('An awesome film')
 p dvd.name
 p dvd.upcase_name
 
+p product.name
 p Product.name
 p DVD.name
