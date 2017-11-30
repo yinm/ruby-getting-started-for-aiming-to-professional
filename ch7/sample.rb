@@ -1,6 +1,12 @@
 class User
-  undef freeze
+  class BloodType
+    attr_reader :type
+    
+    def initialize(type)
+      @type = type
+    end
+  end
 end
 
-user = User.new
-user.freeze
+blood_type = User::BloodType.new('B')
+p blood_type.type
