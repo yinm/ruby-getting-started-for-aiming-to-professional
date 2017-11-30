@@ -1,26 +1,32 @@
-class User
-  attr_reader :name
-
-  def initialize(name, weight)
-    @name = name
-    @weight = weight
+class Parent
+  def initialize
+    @first = 1
+    @second = 2
+    @third = 3
   end
 
-  def heavier_than?(other_user)
-    other_user.weight < @weight
-  end
-
-  protected
-
-  def weight
-    @weight
+  def number
+    "#{@first}.#{@second}.#{@third}"
   end
 end
 
-alice = User.new('Alice', 50)
-bob = User.new('Bob', 60)
+class Child < Parent
+  def initialize
+    super
+    @hour = 6
+    @minute = 30
+    @second = 59
+  end
 
-p alice.heavier_than?(bob)
-p bob.heavier_than?(alice)
+  def time
+    "#{@hour}:#{@minute}:#{@second}"
+  end
+end
 
-alice.weight
+parent = Parent.new
+p parent.number
+
+child = Child.new
+p child.time
+
+p child.number
