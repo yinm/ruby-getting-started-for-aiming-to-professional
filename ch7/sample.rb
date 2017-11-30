@@ -1,5 +1,5 @@
 class Product
-  SOME_NAMES = ['Foo'.freeze, 'Bar'.freeze, 'Baz'.freeze].freeze
+  SOME_NAMES = ['Foo', 'Bar', 'Baz'].map(&:freeze).freeze
 end
 
 Product::SOME_NAMES[0].upcase!
