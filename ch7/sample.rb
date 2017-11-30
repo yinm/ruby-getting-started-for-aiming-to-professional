@@ -1,14 +1,11 @@
 class Product
-  NAME = 'A product'
   SOME_NAMES = ['Foo', 'Bar', 'Baz']
-  SOME_PRICES = { 'Foo' => 1000, 'Bar' => 2000, 'Baz' => 3000 }
+
+  def self.names_without_foo(names = SOME_NAMES)
+    names.delete('Foo')
+    names
+  end
 end
 
-Product::NAME.upcase!
-p Product::NAME
-
-Product::SOME_NAMES << 'Hoge'
+p Product.names_without_foo
 p Product::SOME_NAMES
-
-Product::SOME_PRICES['Hoge'] = 4000
-p Product::SOME_PRICES
