@@ -1,44 +1,23 @@
-class Product
-  @@name = 'Product'
+$program_name = 'Awesome program'
 
-  def self.name
-    @@name
+class Program
+  def initialize(name)
+    $program_name = name
   end
 
-  def initialize(name)
-    @@name = name
+  def self.name
+    $program_name
   end
 
   def name
-    @@name
+    $program_name
   end
 end
 
-class DVD < Product
-  @@name = 'DVD'
+p Program.name
 
-  def self.name
-    @@name
-  end
+program = Program.new('Super program')
+p program.name
 
-  def upcase_name
-    @@name.upcase
-  end
-end
-
-p Product.name
-p DVD.name
-
-product = Product.new('A great movie')
-p product.name
-
-p Product.name
-p DVD.name
-
-dvd = DVD.new('An awesome film')
-p dvd.name
-p dvd.upcase_name
-
-p product.name
-p Product.name
-p DVD.name
+p Program.name
+p $program_name
