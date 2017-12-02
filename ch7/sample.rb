@@ -1,13 +1,10 @@
-a = 'japan'
-b = 'japan'
+text = '03-1234-5678'
 
-p a.eql?(b)
-p a.hash
-p b.hash
-
-c = 1
-d = 1.0
-
-p c.eql?(d)
-p c.hash
-p d.hash
+case text
+  when /^\d{3}-\d{4}$/
+    puts '郵便番号です'
+  when /^\d{4}\/\d{1,2}\/\d{1,2}$/
+    puts '日付です'
+  when /^\d+-\d+-\d+$/
+    puts '電話番号です'
+end
