@@ -1,10 +1,7 @@
-def display_name(object)
-  if object.respond_to?(:name)
-    puts "Name is <<#{object.name}>>"
-  else
-    puts "No name."
-  end
+def add_ten(n)
+  n.to_i + 10
 end
 
-s = 'Alice'
-display_name(s)
+p add_ten(1)
+p add_ten('2')
+p add_ten(nil)
