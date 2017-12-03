@@ -1,9 +1,9 @@
 alice = 'I am Alice.'
-bob = 'I am Bob.'
 
-def alice.shuffle
-  chars.shuffle.join
+class << alice
+  def shuffle
+    chars.shuffle.join
+  end
 end
 
 p alice.shuffle
-p bob.shuffle
