@@ -1,15 +1,21 @@
 class User
-end
-
-def User.hello
-  'Hello.'
-end
-
-class << User
-  def hi
-    'Hi.'
+  def name
+    'Alice'
   end
 end
 
-p User.hello
-p User.hi
+class Product
+  def name
+    'A great movie'
+  end
+end
+
+def display_name(object)
+  puts "Name is <<#{object.name}>>"
+end
+
+user = User.new
+display_name(user)
+
+product = Product.new
+display_name(product)
