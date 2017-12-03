@@ -1,4 +1,6 @@
 module Loggable
+  private
+
   def log(text)
     puts "[LOG] #{text}"
   end
@@ -27,3 +29,5 @@ p product.title
 
 user = User.new
 p user.name
+
+product.log 'public?'
