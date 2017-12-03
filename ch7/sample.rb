@@ -1,9 +1,21 @@
-class String
-  def shuffle
-    chars.shuffle.join
+class User
+  def initialize(name)
+    @name = name
+  end
+  
+  def hello
+    "Hello, #{@name}!"
   end
 end
 
-s = 'Hello, I am Alice.'
-p s.shuffle
-p s.shuffle
+user = User.new('Alice')
+p user.hello
+
+
+class User
+  def hello
+    "#{@name}さん、こんにちは！"
+  end
+end
+
+p user.hello
