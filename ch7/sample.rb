@@ -1,21 +1,23 @@
-class User
-  def name
-    'Alice'
-  end
-end
-
 class Product
-  def name
-    'A great movie'
+  def initialize(name, price)
+    @name = name
+    @price = price
+  end
+
+  def display_text
+    stock = stock? ? 'あり' : 'なし'
+    "商品名: #{@name} 価格: #{@price}円 在庫: #{stock}"
   end
 end
 
-def display_name(object)
-  puts "Name is <<#{object.name}>>"
+class DVD < Product
+  def stock?
+    true
+  end
 end
 
-user = User.new
-display_name(user)
+dvd = DVD.new('An awesome film', 3000)
+p dvd.display_text
 
-product = Product.new
-display_name(product)
+product = Product.new('A great film', 1000)
+p product.display_text
