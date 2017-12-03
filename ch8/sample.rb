@@ -1,10 +1,31 @@
-module Greeter
-  def hello
-    'hello'
+class Product
+  def title
+    log 'title is called.'
+    'A great movie'
+  end
+
+  private
+
+  def log(text)
+    puts "[LOG] #{text}"
   end
 end
 
-greeter = Greeter.new
+class User
+  def name
+    log 'name is called.'
+    'Alice'
+  end
 
-# module AwesomeGreeter < Greeter
-# end
+  private
+
+  def log(text)
+    puts "[LOG] #{text}"
+  end
+end
+
+product = Product.new
+p product.title
+
+user = User.new
+p user.name
