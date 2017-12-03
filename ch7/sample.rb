@@ -1,27 +1,4 @@
-class Product
-  def initialize(name, price)
-    @name = name
-    @price = price
-  end
+s = 'Alice'
 
-  def display_text
-    stock = stock? ? 'あり' : 'なし'
-    "商品名: #{@name} 価格: #{@price}円 在庫: #{stock}"
-  end
-
-  def stock?
-    raise 'Must implement stock? in subclass.'
-  end
-end
-
-class DVD < Product
-  def stock?
-    true
-  end
-end
-
-dvd = DVD.new('An awesome film', 3000)
-p dvd.display_text
-
-product = Product.new('A great film', 1000)
-p product.display_text
+p s.respond_to?(:split)
+p s.respond_to?(:name)
