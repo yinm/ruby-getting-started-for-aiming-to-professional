@@ -8,6 +8,10 @@ class Product
     stock = stock? ? 'あり' : 'なし'
     "商品名: #{@name} 価格: #{@price}円 在庫: #{stock}"
   end
+
+  def stock?
+    raise 'Must implement stock? in subclass.'
+  end
 end
 
 class DVD < Product
