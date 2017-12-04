@@ -5,4 +5,4 @@ class Product
   include Loggable
 end
 
-p Product.include?(Loggable)
+p Product.included_modules
