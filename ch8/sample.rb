@@ -1,11 +1,16 @@
-module Loggable
+module Taggable
+  def price_tag
+    "#{price}円"
+  end
 end
 
 class Product
-  include Loggable
+  include Taggable
+
+  def price
+    1000
+  end
 end
 
 product = Product.new
-p product.is_a?(Product)
-p product.is_a?(Loggable)
-p product.is_a?(Object)
+p product.price_tag
