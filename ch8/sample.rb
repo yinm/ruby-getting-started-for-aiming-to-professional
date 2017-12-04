@@ -5,4 +5,6 @@ class Product
   include Loggable
 end
 
-p Product.ancestors
+product = Product.new
+p product.class.include?(Loggable)
+p product.class.included_modules
