@@ -7,10 +7,5 @@ end
 class Product
   extend Loggable
 
-  def self.create_products(names)
-    log 'create_products is called.'
-  end
+  log 'Defined Product class.'
 end
-
-Product.create_products([])
-Product.log('Hello.')
