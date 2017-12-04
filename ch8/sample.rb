@@ -5,4 +5,4 @@ class Product
   include Loggable
 end
 
-p Product.included_modules
+p Product.ancestors
