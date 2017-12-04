@@ -6,5 +6,6 @@ class Product
 end
 
 product = Product.new
-p product.class.include?(Loggable)
-p product.class.included_modules
+p product.is_a?(Product)
+p product.is_a?(Loggable)
+p product.is_a?(Object)
