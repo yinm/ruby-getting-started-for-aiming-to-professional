@@ -1,21 +1,11 @@
-module NameChanger
-  def change_name
-    self.name = 'ありす'
+module Loggable
+  def log(text)
+    puts "[LOG] #{text}"
   end
 end
 
-class User
-  include NameChanger
+s = 'abc'
+# s.log('Hello.')
 
-  attr_accessor :name
-
-  def initialize(name)
-    @name = name
-  end
-end
-
-user = User.new('alice')
-p user.name
-
-user.change_name
-p user.name
+s.extend(Loggable)
+s.log('Hello.')
