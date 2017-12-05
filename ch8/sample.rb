@@ -1,13 +1,13 @@
 module NameChanger
   def change_name
-    @name = 'ありす'
+    self.name = 'ありす'
   end
 end
 
 class User
   include NameChanger
 
-  attr_reader :name
+  attr_accessor :name
 
   def initialize(name)
     @name = name
