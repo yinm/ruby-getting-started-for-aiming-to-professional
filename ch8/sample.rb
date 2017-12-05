@@ -1,11 +1,9 @@
 class User
+  p self
+  p self.class
 end
-
-p User.class
-p Class.superclass
 
 module Loggable
+  p self
+  p self.class
 end
-
-p Loggable.class
-p Module.superclass
