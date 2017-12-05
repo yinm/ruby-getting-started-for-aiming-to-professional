@@ -1,11 +1,19 @@
-module Loggable
-  def log(text)
-    puts "[LOG] #{text}"
+module Baseball
+  class Second
+    def initialize(player, uniform_number)
+      @player = player
+      @uniform_number = uniform_number
+    end
   end
 end
 
-s = 'abc'
-# s.log('Hello.')
+module Clock
+  class Second
+    def initialize(digits)
+      @digits = digits
+    end
+  end
+end
 
-s.extend(Loggable)
-s.log('Hello.')
+p Baseball::Second.new('Alice', 13)
+p Clock::Second.new(13)
