@@ -1,9 +1,12 @@
-module Loggable
-  PREFIX = '[LOG]'.freeze
+p Math.sqrt(2)
 
-  def log(text)
-    puts "#{PREFIX} #{text}"
+class Calculator
+  include Math
+
+  def calc_sqrt(n)
+    sqrt(n)
   end
 end
 
-p Loggable::PREFIX
+calculator = Calculator.new
+p calculator.calc_sqrt(2)
