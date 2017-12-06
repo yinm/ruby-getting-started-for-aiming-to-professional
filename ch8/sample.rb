@@ -16,3 +16,13 @@ end
 
 product = Product.new
 p product.name
+
+class User
+  def name
+    'Alice'
+  end
+end
+
+User.prepend NameDecorator
+user = User.new
+p user.name
