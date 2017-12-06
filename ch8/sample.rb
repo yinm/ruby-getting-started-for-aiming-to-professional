@@ -1,30 +1,22 @@
-module A
-  def to_s
-    "<A> #{super}"
+module Greeting
+  def hello
+    'hello.'
   end
 end
 
-module B
-  def to_s
-    "<B> #{super}"
+module Aisatsu
+  include Greeting
+
+  def konnichiwa
+    'こんにちは。'
   end
 end
 
-class Product
-  def to_s
-    "<Product> #{super}"
-  end
+class User
+  include Aisatsu
 end
 
-class DVD < Product
-  include A
-  include B
-
-  def to_s
-    "<DVD> #{super}"
-  end
-end
-
-dvd = DVD.new
-p dvd.to_s
-p DVD.ancestors
+user = User.new
+p user.konnichiwa
+p user.hello
+p User.ancestors
