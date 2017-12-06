@@ -1,18 +1,18 @@
 class Product
   def name
-    'A great file'
+    'A great film'
   end
+end
+
+module NameDecorator
+  def name
+    "<<#{super}>>"
+  end
+end
+
+class Product
+  prepend NameDecorator
 end
 
 product = Product.new
-p product.name
-
-class Product
-  alias name_original name
-
-  def name
-    "<<#{name_original}>>"
-  end
-end
-
 p product.name
