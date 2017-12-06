@@ -1,28 +1,26 @@
-module AwesomeApi
-  @base_url = ''
-  @debug_mode = false
+require 'singleton'
 
-  class << self
-    def base_url=(value)
-      @base_url = value
-    end
+class Configuration
+  include Singleton
 
-    def base_url
-      @base_url
-    end
+  attr_accessor :base_url, :debug_mode
 
-    def debug_mode=(value)
-      @debug_mode = value
-    end
-
-    def debug_mode
-      @debug_mode
-    end
+  def initialize
+    @base_url = ''
+    @debug_mode = false
   end
 end
 
-AwesomeApi.base_url = 'http://example.com'
-AwesomeApi.debug_mode = true
+# config = Configuration.new
 
-p AwesomeApi.base_url
-p AwesomeApi.debug_mode
+config = Configuration.instance
+config.base_url = 'http://example.com'
+config.debug_mode = true
+
+other = Configuration.instance
+p other.base_url
+p other.debug_mode
+
+p config.object_id
+p other.object_id
+p config.equal?(other)
