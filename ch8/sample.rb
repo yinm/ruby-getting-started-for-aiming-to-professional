@@ -1,2 +1,2 @@
-p Math::E
-p Math::PI
+Kernel.puts 'Hello.'
+Kernel.p [1, 2, 3]
