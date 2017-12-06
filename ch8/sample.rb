@@ -1,17 +1,7 @@
-class Second
-  def initialize(player, uniform_number)
-    @player = player
-    @uniform_number = uniform_number
+module Loggable
+  def self.log(text)
+    puts "[LOG] #{text}"
   end
 end
 
-module Clock
-  class Second
-    def initialize(digits)
-      @digits = digits
-      @baseball_second = ::Second.new('Clock', 10)
-    end
-  end
-end
-
-p Clock::Second.new(13)
+Loggable.log('Hello.')
