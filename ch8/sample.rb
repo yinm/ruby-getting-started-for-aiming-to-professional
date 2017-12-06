@@ -1,22 +1,16 @@
-module Greeting
-  def hello
-    'hello.'
+module A
+  def to_s
+    "<A> #{super}"
   end
 end
 
-module Aisatsu
-  include Greeting
+class Product
+  prepend A
 
-  def konnichiwa
-    'こんにちは。'
+  def to_s
+    "<Product> #{super}"
   end
 end
 
-class User
-  include Aisatsu
-end
-
-user = User.new
-p user.konnichiwa
-p user.hello
-p User.ancestors
+product = Product.new
+p product.to_s
