@@ -1,16 +1,11 @@
-module StringShuffle
-  refine String do
-    def shuffle
-      chars.shuffle.join
-    end
-  end
-end
+require '../ch8/string_shuffle'
 
-# 'Alice'.shuffle
+# p 'Alice'.shuffle
+
+using StringShuffle
+p 'Alice'.shuffle
 
 class User
-  using StringShuffle
-
   def initialize(name)
     @name = name
   end
@@ -23,4 +18,4 @@ end
 user = User.new('Alice')
 p user.shuffled_name
 
-'Alice'.shuffle
+p 'Alice'.shuffle
