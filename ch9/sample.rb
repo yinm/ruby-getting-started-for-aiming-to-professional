@@ -1,15 +1,25 @@
-puts 'Start.'
+def method_1
+  puts 'method_1 start.'
 
-module Greeter
-  def hello
-    'hello'
+  begin
+    method_2
+  rescue
+    puts '例外が発生しました'
   end
+
+  puts 'method_1 end.'
 end
 
-begin
-  greeter = Greeter.new
-rescue
-  puts '例外が発生したが、このまま続行する'
+def method_2
+  puts 'method_2 start.'
+  method_3
+  puts 'method_2 end.'
 end
 
-puts 'End.'
+def method_3
+  puts 'method_3 start.'
+  1 / 0 # ZeroDivisionErrorを発生させる
+  puts 'method_3 end.'
+end
+
+method_1
