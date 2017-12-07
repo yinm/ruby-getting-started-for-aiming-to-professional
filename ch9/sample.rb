@@ -1,12 +1,6 @@
 def method_1
   puts 'method_1 start.'
-
-  begin
-    method_2
-  rescue
-    puts '例外が発生しました'
-  end
-
+  method_2
   puts 'method_1 end.'
 end
 
