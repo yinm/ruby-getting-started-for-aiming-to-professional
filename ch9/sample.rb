@@ -1,7 +1,7 @@
 begin
   'abc'.foo
-rescue NameError
-  puts 'NameErrorです'
 rescue NoMethodError
   puts 'NoMethodErrorです'
+rescue NameError
+  puts 'NameErrorです'
 end
