@@ -1,5 +1,5 @@
 begin
-  'abc'.foo
+  Foo.new
 rescue NoMethodError
   puts 'NoMethodErrorです'
 rescue NameError
