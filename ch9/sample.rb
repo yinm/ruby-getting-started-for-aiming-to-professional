@@ -1,5 +1,5 @@
 begin
-  1 / 0
+  'abc'.foo
 rescue ZeroDivisionError
   puts '0で除算しました'
 end
