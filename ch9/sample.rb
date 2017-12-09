@@ -7,7 +7,7 @@ def currency_of(country)
     when :india
       'rupee'
     else
-      raise ArgumentError, "無効な国名です。#{country}"
+      raise ArgumentError.new("無効な国名です。 #{country}")
   end
 end
 
