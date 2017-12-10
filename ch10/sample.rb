@@ -1,2 +1,2 @@
-hello_proc = Proc.new { 'Hello!' }
-p hello_proc.call
+add_proc = Proc.new { |a, b| a + b }
+p add_proc.call(10, 20)
