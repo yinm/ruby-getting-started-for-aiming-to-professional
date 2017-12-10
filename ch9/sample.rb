@@ -7,10 +7,8 @@ def convert_heisei_to_date(heisei_text)
   month = m[:month].to_i
   day = m[:day].to_i
 
-  begin
+  if Date.valid_date?(year, month, day)
     Date.new(year, month, day)
-  rescue ArgumentError
-    nil
   end
 end
 
