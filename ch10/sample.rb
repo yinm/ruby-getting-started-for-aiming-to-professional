@@ -1,15 +1,10 @@
 def greeting
   puts 'おはよう'
-  
-  if block_given?
-    yield
-  end
-  
+  text = yield 'こんにちは'
+  puts text
   puts 'こんばんは'
 end
 
-greeting
-
-greeting do
-  puts 'こんにちは'
+greeting do |text|
+  text * 2
 end
