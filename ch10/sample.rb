@@ -1,11 +1,10 @@
 def greeting
   puts 'おはよう'
-  text = yield 'こんにちは', 12345
+  text = yield 'こんにちは'
   puts text
   puts 'こんばんは'
 end
 
-greeting do |text|
-  text * 2
+greeting do |text, other|
+  text * 2 + other.inspect
 end
-
