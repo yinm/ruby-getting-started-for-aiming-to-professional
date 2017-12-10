@@ -1,7 +1,3 @@
-file = File.open('some.txt', 'w')
-
-begin
+File.open('some2.txt', 'w') do |file|
   file << 'Hello'
-ensure
-  file.close
 end
