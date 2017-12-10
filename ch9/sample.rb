@@ -1,3 +1,2 @@
-input = gets
-input = input.chomp
+input = gets.chomp
 p input
