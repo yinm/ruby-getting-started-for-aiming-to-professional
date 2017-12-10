@@ -3,4 +3,6 @@ def greeting
   puts 'こんばんは'
 end
 
-greeting
+greeting do
+  puts 'こんにちは'
+end
