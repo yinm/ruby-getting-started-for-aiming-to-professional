@@ -1,6 +1,6 @@
 def greeting
   puts 'おはよう'
-  text = yield 'こんにちは'
+  text = yield 'こんにちは', 12345
   puts text
   puts 'こんばんは'
 end
@@ -8,3 +8,4 @@ end
 greeting do |text|
   text * 2
 end
+
