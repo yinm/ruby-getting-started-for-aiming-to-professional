@@ -1,3 +1,12 @@
-add_proc = proc { |a, b| a + b }
-p add_proc
-p add_proc.call(10, 20)
+def greeting(&block)
+  puts block.class
+  
+  puts 'おはよう'
+  text = block.call('こんにちは')
+  puts text
+  puts 'こんばんは'
+end
+
+greeting do |text|
+  text * 2
+end
