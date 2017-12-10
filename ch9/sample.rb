@@ -1,14 +1,22 @@
-begin
-  puts 'Hello.'
-rescue
-  puts '例外が発生しました。'
-else
-  puts '例外は発生しませんでした。'
-end
+ret =
+  begin
+    'OK'
+  rescue
+    'error'
+  ensure
+    'ensure'
+  end
 
-begin
-  puts 'Hello.'
-  puts '例外は発生しませんでした。'
-rescue
-  puts '例外が発生しました'
-end
+p ret
+
+ret =
+  begin
+    1 / 0
+    'OK'
+  rescue
+    'error'
+  ensure
+    'ensure'
+  end
+
+p ret
