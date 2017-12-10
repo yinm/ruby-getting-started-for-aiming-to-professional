@@ -1,7 +1,7 @@
 def greeting(&block)
   puts 'おはよう'
-  unless block.nil?
-    text = block.call('こんにちは')
+  if block_given?
+    text = yield 'こんにちは'
     puts text
   end
   puts 'こんばんは'
