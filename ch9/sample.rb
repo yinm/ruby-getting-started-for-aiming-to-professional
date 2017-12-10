@@ -1,15 +1,8 @@
-def fizz_buzz(n)
-  if n % 15 == 0
-    'Fizz Buzz'
-  elsif n % 3 == 0
-    'Fizz'
-  elsif n % 5 == 0
-    'Buzz'
-  else
-    n.to_s
-  end
+def some_method
+  1 / 0
 rescue => e
-  puts "#{e.class} #{e.message}"
+  puts "エラーが発生しました: #{e.mesage}"
+  puts e.backtrace
 end
 
-fizz_buzz(nil)
+some_method
