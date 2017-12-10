@@ -1,19 +1,16 @@
-def some_method
-  1 / 0
-rescue => e
-  puts "エラーが発生しました: #{e.mesage}"
-  puts e.backtrace
-end
-
-begin
-  some_method
-rescue => e
-  puts "エラーが発生しました: #{e.class} #{e.message}"
-  puts e.backtrace
-
-  original = e.cause
-  unless original.nil?
-    puts "元の例外: #{original.class} #{original.message}"
-    puts original.backtrace
+def fizz_buzz(n)
+  if n % 15 == 0
+    'Fizz Buzz'
+  elsif n % 3 == 0
+    'Fizz'
+  elsif n % 5 == 0
+    'Buzz'
+  else
+    n.to_s
   end
+rescue => e
+  puts "[LOG] エラーが発生しました: #{e.class} #{e.message}"
+  raise
 end
+
+fizz_buzz(nil)
