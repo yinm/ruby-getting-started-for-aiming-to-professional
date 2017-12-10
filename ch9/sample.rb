@@ -1,8 +1,13 @@
-require 'date'
-
-def to_date(string)
-  Date.parse(string) rescue nil
+begin
+  1 / 0
+rescue => e
+  puts "#{e.class} #{e.message}"
+  puts e.backtrace
 end
 
-p to_date('2017-01-01')
-p to_date('abcdef')
+begin
+  1 / 0
+rescue
+  puts "#{$!.class} #{$!.message}"
+  puts $@
+end
