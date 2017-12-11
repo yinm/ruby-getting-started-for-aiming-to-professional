@@ -1,18 +1,14 @@
-def generate_proc(array)
-  counter = 0
-
-  Proc.new do
-    counter += 10
-    array << counter
-  end
+def proc_return
+  f = Proc.new { |n| return n * 10 }
+  ret = [1, 2, 3].map(&f)
+  "ret: #{ret}"
 end
 
-values = []
-sample_proc = generate_proc(values)
-p values
+def lambda_return
+  f = ->(n) { return n * 10 }
+  ret = [1, 2, 3].map(&f)
+  "ret: #{ret}"
+end
 
-p sample_proc
-sample_proc.call
-p values
-sample_proc.call
-p values
+p proc_return
+p lambda_return
