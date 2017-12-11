@@ -1,2 +1,18 @@
-split_proc = :split.to_proc
-p split_proc.call('a-b-c-d e', '-', 3)
+def generate_proc(array)
+  counter = 0
+
+  Proc.new do
+    counter += 10
+    array << counter
+  end
+end
+
+values = []
+sample_proc = generate_proc(values)
+p values
+
+p sample_proc
+sample_proc.call
+p values
+sample_proc.call
+p values
