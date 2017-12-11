@@ -1,7 +1,6 @@
 add_proc = Proc.new { |a, b| a + b }
-p add_proc.class
-p add_proc.lambda?
 
-add_lambda = ->(a, b) { a + b }
-p add_lambda.class
-p add_lambda.lambda?
+p add_proc.call(10, 20)
+p add_proc.yield(10, 20)
+p add_proc.(10, 20)
+p add_proc[10, 20]
