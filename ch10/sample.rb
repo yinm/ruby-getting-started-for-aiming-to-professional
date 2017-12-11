@@ -1,2 +1,3 @@
 reverse_proc = Proc.new { |s| s.reverse }
-p ['Ruby', 'Java', 'Perl'].map(&reverse_proc)
+other_proc = reverse_proc.to_proc
+p reverse_proc.equal?(other_proc)
