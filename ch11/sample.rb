@@ -1,9 +1,15 @@
-def to_hex(r, g, b)
-  [r, g, b].inject('#') do |hex, n|
-    puts hex
-    hex + n.to_s(16).rjust(2, '0')
+def greeting(country)
+  puts 'greeting start.'
+  return 'countryを入力してください' if country.nil?
+
+  if country == 'japan'
+    puts 'japan'
+    'こんにちは'
+  else
+    puts 'other'
+    'hello'
   end
 end
 
-hex = to_hex(48, 166, 25)
-p hex
+p greeting('japan')
+p greeting('us')
