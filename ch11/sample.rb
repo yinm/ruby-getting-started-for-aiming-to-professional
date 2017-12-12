@@ -1,2 +1,2 @@
-sum = p 10 + 20
-puts sum
+a = 'hello'.tap { |s| puts "<<#{s}>>" }
+p a
