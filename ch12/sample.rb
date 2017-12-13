@@ -1,10 +1,5 @@
-time = Time.new(2017, 1, 31, 23, 30, 59)
-p time
+p File.exists?('./secret.txt')
+p File.exists?('./sample.rb')
 
-require 'date'
-
-date = Date.new(2017, 1, 31)
-p date
-
-date_time = DateTime.new(2017, 1, 31, 23, 30, 59)
-p date_time
+p Dir.exists?('./secret_folder')
+p Dir.exists?('./sample_folder')
