@@ -1,7 +1,3 @@
-File.open('../ruby-book/lib/fizz_buzz.rb', 'r') do |f|
-  puts f.readlines.count
-end
+require 'fileutils'
 
-File.open('./hello_world.txt', 'w') do |f|
-  f.puts 'Hello, world!'
-end
+FileUtils.mv('./hello_world.txt', './hello_world.rb')
