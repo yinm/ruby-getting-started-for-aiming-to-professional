@@ -1,5 +1,7 @@
-p File.exists?('./secret.txt')
-p File.exists?('./sample.rb')
+File.open('../ruby-book/lib/fizz_buzz.rb', 'r') do |f|
+  puts f.readlines.count
+end
 
-p Dir.exists?('./secret_folder')
-p Dir.exists?('./sample_folder')
+File.open('./hello_world.txt', 'w') do |f|
+  f.puts 'Hello, world!'
+end
