@@ -1,3 +1,8 @@
-require 'fileutils'
+require 'pathname'
 
-FileUtils.mv('./hello_world.txt', './hello_world.rb')
+lib = Pathname.new('../ruby-book/lib')
+
+p lib.file?
+p lib.directory?
+
+p lib.join('sample.txt').to_s
