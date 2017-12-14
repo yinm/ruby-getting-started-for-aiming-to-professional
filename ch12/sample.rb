@@ -1,2 +1,1 @@
-code = '[1, 2, 3].map { |n| n * 10 }'
-p eval(code)
+puts `cat ../ruby-book/lib/fizz_buzz.rb`
