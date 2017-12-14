@@ -1,7 +1,14 @@
-require 'json'
+require 'yaml'
 
-user = {name: 'Alice', email: 'alice@example.com', age: 20}
+yaml = <<TEXT
+alice:
+  name: 'Alice'
+  email: 'alice@example.com'
+  age: 20
+TEXT
 
-user_json = user.to_json
-puts user_json
-puts JSON.parse(user_json)
+users = YAML.load(yaml)
+p users
+
+users['alice']['gender'] = :female
+puts YAML.dump(users)
