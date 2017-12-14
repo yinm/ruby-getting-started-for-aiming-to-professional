@@ -1,1 +1,1 @@
-puts `cat ../ruby-book/lib/fizz_buzz.rb`
+puts %x{cat ../ruby-book/lib/fizz_buzz.rb}
