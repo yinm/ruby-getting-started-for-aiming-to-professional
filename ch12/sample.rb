@@ -1,10 +1,7 @@
-require 'csv'
+require 'json'
 
-CSV.open('./sample.csv', 'w') do |csv|
-  csv << ['Name', 'Email', 'Age']
-  csv << ['Alice', 'alice@example.com', 20]
-end
+user = {name: 'Alice', email: 'alice@example.com', age: 20}
 
-CSV.foreach('./sample.csv') do |row|
-  puts "1: #{row[0]}, 2: #{row[1]}, 3: #{row[2]}"
-end
+user_json = user.to_json
+puts user_json
+puts JSON.parse(user_json)
