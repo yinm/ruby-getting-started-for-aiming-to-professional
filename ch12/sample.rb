@@ -1,1 +1,4 @@
-puts %x{cat ../ruby-book/lib/fizz_buzz.rb}
+str = 'a,b,c'
+
+p str.send('upcase')
+p str.send('split', ',')
